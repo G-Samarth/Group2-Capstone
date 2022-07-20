@@ -1,29 +1,30 @@
-.card{
-   
-    border:none;
-    width:50vw;
-    padding:40px;
-    position:absolute;
-    top:57%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    background:hsla(205,46%,30%,1);
-    background:linear-gradient(90deg,hsla(205,46%,30%,1)0%,hsla(260,29%,36%,1)100%);
+.card {
+  box-shadow: 7px 7px 10px rgb(27 25 25 / 40%);
+  border: none;
+  width: 50vw;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: hsla(205, 46%, 30%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(205, 46%, 30%, 1) 0%,
+    hsla(260, 29%, 36%, 1) 100%
+  );
 }
-.card  h1,h6{
-    color:#fff;
+.card h1,
+h6 {
+  color: #fff;
 }
-label{
-    color:#fff;
+label {
+  color: #fff;
 }
-body{
-    background-color:green;
+body {
+  background-color: green;
 }
-.image{
-    height:32.5em; background-size:cover; width:auto;
-    background-image:url('/assets/images/job3.jpg');
-    /*background-position:50% 50%;*/
-  }
-
-
-  
+.image {
+  height: 100%;
+  background: url("/assets/images/job3.jpg") no-repeat center center fixed;
+}

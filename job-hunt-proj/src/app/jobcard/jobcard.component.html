@@ -1,19 +1,57 @@
-<div class="container" *ngFor='let job of jobs'>
+<!-- <div class="container" *ngFor="let job of jobs">
   <div class="card mt-3">
-    <div class="card-header bg-secondary text-white" >
+    <div class="card-header bg-secondary text-white">
       <h5>{{ job.name }}</h5>
     </div>
     <div class="card-body bg-secondary text-white">
-      <p>Role-{{ job.role}}</p>
-      <p>Location-{{job.location}}</p>
-      <p>Company Name-{{job.company}}</p>
-      <p>JobId-{{job.id}}</p>
+      <p>Role-{{ job.role }}</p>
+      <p>Location-{{ job.location }}</p>
+      <p>Company Name-{{ job.company }}</p>
+      <p>JobId-{{ job.id }}</p>
 
-   
-  <div class="container d-flex flex-row justify-content-between ">
-    <a href="{{job.landing_page}}" target="_blank" class="btn btn-primary" role="button" aria-pressed="true">Apply</a>
-    <!-- <button type="button" class="btn btn-primary"  (click)="addToFavorite(job)"> Add to Wishlist</button> -->
-    
+      <div class="container d-flex flex-row justify-content-between">
+        <a
+          href="{{ job.landing_page }}"
+          target="_blank"
+          class="btn btn-primary"
+          role="button"
+          aria-pressed="true"
+          >Apply</a
+        >
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container mt-4" *ngFor="let job of jobs">
+  <div
+    style="
+      background-color: #337ace;
+      border-radius: 10px;
+      box-shadow: 7px 7px 10px rgb(27 25 25 / 40%);
+    "
+    class="text-white py-3 px-4"
+  >
+    <div class="mb-3">
+      <h5 style="font-weight: 600; margin: 0">{{ job.name }}</h5>
+    </div>
+    <hr />
+    <div class="">
+      <p class="mb-1"><strong>Role: </strong>{{ job.role }}</p>
+      <p class="mb-1"><strong>Location: </strong>{{ job.location }}</p>
+      <p class="mb-1"><strong>Company Name: </strong>{{ job.company }}</p>
+      <p class="mb-1"><strong>JobID: </strong>{{ job.id }}</p>
+
+      <div style="width: 100%" class="d-flex justify-content-start">
+        <a
+          href="{{ job.landing_page }}"
+          target="_blank"
+          class="btn btn-light mt-3 mb-1 px-4"
+          role="button"
+          aria-pressed="true"
+          >Apply</a
+        >
+      </div>
+    </div>
   </div>
 </div>
-
